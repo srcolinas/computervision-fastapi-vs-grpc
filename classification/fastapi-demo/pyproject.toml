@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastapi-demo"
+version = "0.1.0"
+description = ""
+authors = ["Sebastian Rodriguez Colina <srcolinas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.109.0"
+pydantic-settings = "^2.1.0"
+opencv-python = "^4.9.0.80"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+mypy = "^1.8.0"
+ruff = "^0.1.14"
+httpx = "^0.26.0"
+python-multipart = "^0.0.6"
+
+[tool.mypy]
+plugins = "numpy.typing.mypy_plugin"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
